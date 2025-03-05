@@ -315,6 +315,61 @@ footer {
         margin: 20px auto;
         display: block;
     }
+    
+    /* Адаптивная таблица цен для мобильных устройств */
+    .pricing-table, 
+    .pricing-table thead, 
+    .pricing-table tbody, 
+    .pricing-table th, 
+    .pricing-table td, 
+    .pricing-table tr {
+        display: block;
+    }
+    
+    .pricing-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .pricing-table tr {
+        margin-bottom: 25px;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    
+    .pricing-table td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .pricing-table td:before {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 45%;
+        padding-right: 10px;
+        font-weight: bold;
+    }
+    
+    /* Заголовки для ячеек */
+    .pricing-table tr:nth-of-type(1) td:nth-of-type(1):before { content: "Тариф:"; }
+    .pricing-table tr:nth-of-type(1) td:nth-of-type(2):before { content: "Telegram:"; }
+    .pricing-table tr:nth-of-type(1) td:nth-of-type(3):before { content: "WhatsApp:"; }
+    .pricing-table tr:nth-of-type(1) td:nth-of-type(4):before { content: "Для объема:"; }
+    
+    .pricing-table tr:nth-of-type(2) td:nth-of-type(1):before { content: "Тариф:"; }
+    .pricing-table tr:nth-of-type(2) td:nth-of-type(2):before { content: "Telegram:"; }
+    .pricing-table tr:nth-of-type(2) td:nth-of-type(3):before { content: "WhatsApp:"; }
+    .pricing-table tr:nth-of-type(2) td:nth-of-type(4):before { content: "Для объема:"; }
+    
+    .pricing-table tr:nth-of-type(3) td:nth-of-type(1):before { content: "Тариф:"; }
+    .pricing-table tr:nth-of-type(3) td:nth-of-type(2):before { content: "Telegram:"; }
+    .pricing-table tr:nth-of-type(3) td:nth-of-type(3):before { content: "WhatsApp:"; }
+    .pricing-table tr:nth-of-type(3) td:nth-of-type(4):before { content: "Для объема:"; }
 }
 
 /* Chat styling */
